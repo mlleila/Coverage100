@@ -23,9 +23,6 @@
         </dependency>
     </dependencies>
 
-    
-
-
     <build>
         <plugins>
             <plugin>
@@ -56,6 +53,20 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <rules>
+                        <rule>
+                            <limits>
+                                <limit>
+                                    <counter>INSTRUCTION</counter>
+                                    <value>COVEREDRATIO</value>
+                                    <minimum>100%</minimum>
+                                </limit>
+                            </limits>
+                        </rule>
+                    </rules>
+                </configuration>
+
             </plugin>
         </plugins>
 
